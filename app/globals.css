@@ -86,3 +86,10 @@
   background: rgba(65,64,62, 0.12);
   border-radius: 5px;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  scroll-behavior: smooth;
+}

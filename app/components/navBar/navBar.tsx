@@ -16,10 +16,10 @@ const Navbar = () => {
                     <h1 className="text-[18px] font-bold">Edu<span className="text-[#1D4ED8]">Tech</span></h1>
                 </Link>
                 <ul className="flex gap-[32px]">
-                        <Link className="font-normal text-[16px] hover:text-[#1D4ED8]" href="/">
-                            Comment ça marche ?
+                        <Link className="font-normal text-[16px] hover:text-[#1D4ED8]" href="#presentation">
+                            C&apos;est quoi ?
                         </Link>
-                        <Link className="font-normal text-[16px] hover:text-[#1D4ED8]" href="/">
+                        <Link className="font-normal text-[16px] hover:text-[#1D4ED8]" href="#prix">
                             Prix
                         </Link>
                         <Link className="font-normal text-[16px] hover:text-[#1D4ED8]" href="/">

@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <p className="text-[20px] w-5/6 font-normal text-center">En tant qu’élève je sais ce que c’est de passer des heures et des heures à <span className="text-[#1D4ED8] font-bold">faire des fiches de révisions</span>, il faut regrouper les différents <span className="text-[#1D4ED8] font-bold">cours</span>, <span className="text-[#1D4ED8] font-bold">exercices</span> et <span className="text-[#1D4ED8] font-bold">méthodes</span> qui sont souvent pas centralisés au même endroit <br /><br />C’est pour ça que j’ai créé <span className="font-bold">Edu<span className="text-[#1D4ED8]">Tech</span></span>, tout est <span className="text-[#1D4ED8] font-black">centralisé</span> pour vous faire <span className="text-[#1D4ED8] font-black">gagner du temps</span> et <span className="text-[#1D4ED8] font-black">apprendre plus efficacement</span></p>
       </div>
-      <div className="mt-[382px] flex flex-row items-center justify-center">
+      <div id="presentation" className="mt-[382px] flex flex-row items-center justify-center">
         <div className="w-2/6 flex flex-col gap-8">
           <h2 className="font-normal leading-tight text-[48px]"><span className="text-[#1D4ED8] font-bold">Annotez vos cours</span> avec la même simplicité que sur une feuille</h2>
           <Image className="relative bottom-[155px]"
@@ -115,7 +115,7 @@ export default function Home() {
                 alt="Picture of the author"
           />
       </div>
-      <div className="mt-[382px] text-center items-center flex flex-col gap-4">
+      <div id="prix" className="mt-[382px] text-center items-center flex flex-col gap-4">
         <div>
           <h2 className="text-[52px]"><span className="font-bold">Edu<span className="text-[#1D4ED8]">Tech</span></span> est un projet <span className="text-[#1D4ED8] font-bold">100% gratuit!</span></h2>
           <Image className="relative left-[520px] bottom-3"
