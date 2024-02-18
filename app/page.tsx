@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-full h-screen flex flex-col items-center mt-32 z-10">
-      <Link target="_blank" href={"https://github.com/exosky12"} className="cursor-pointer flex items-center bg-[#41403E] rounded-full px-4 py-2 border uppercase"><span className="font-medium text-[16px]">Crée par un élève pour les élèves</span></Link>
+      <Link target="_blank" href={"https://github.com/exosky12"} className="cursor-pointer flex items-center bg-[#41403E] rounded-full px-4 py-2 border uppercase"><span className="font-medium text-[16px]">Créé par un élève pour les élèves</span></Link>
       <div>
         <h1 className="text-[82px] font-bold text-center">
           <span className="text-[#1D4ED8] font-black">Simplifiez</span> votre aprentissage, <br /><span className="text-[#1D4ED8] font-black">dépassez</span> vos limites.</h1>
