@@ -6,8 +6,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { frFR } from "@clerk/localizations";
 import { dark } from "@clerk/themes";
 import { Header } from "./components/header/Header";
-import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const satoshi = localFont({
 	src: "./Satoshi-Variable.woff2",
