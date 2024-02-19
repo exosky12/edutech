@@ -7,6 +7,7 @@ import { frFR } from "@clerk/localizations";
 import { dark } from "@clerk/themes";
 import { Header } from "./components/header/Header";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const satoshi = localFont({
 	src: "./Satoshi-Variable.woff2",
@@ -39,6 +40,7 @@ export default function RootLayout({
 					<Header />
 					{children}
 					<Analytics />
+					<SpeedInsights />
 				</body>
 			</html>
 		</ClerkProvider>
