@@ -1,25 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-
-function getWindowSize() {
-	const { innerWidth, innerHeight } = window;
-	return { innerWidth, innerHeight };
-}
+import useWindowDimensions from "./hooks/useWindowDimensions";
 export default function Home() {
-	const [windowSize, setWindowSize] = useState(getWindowSize());
-	useEffect(() => {
-		function handleWindowResize() {
-			setWindowSize(getWindowSize());
-		}
+	const { width } = useWindowDimensions();
 
-		window.addEventListener("resize", handleWindowResize);
-
-		return () => {
-			window.removeEventListener("resize", handleWindowResize);
-		};
-	}, []);
 	return (
 		<div className="w-full h-screen flex flex-col items-center mt-36 sm:mt-52 md:mt-32 z-10">
 			<Link
@@ -38,7 +23,7 @@ export default function Home() {
 					<span className="text-[#1D4ED8] font-black">dépassez</span> vos
 					limites.
 				</h1>
-				{windowSize.innerWidth < 1280 && windowSize.innerWidth > 1024 ? (
+				{width! < 1280 && width! > 1024 ? (
 					<>
 						<Image
 							className="relative bottom-[110px]"
@@ -55,7 +40,7 @@ export default function Home() {
 							alt="Picture of the author"
 						/>
 					</>
-				) : windowSize.innerWidth < 1024 && windowSize.innerWidth > 768 ? (
+				) : width! < 1024 && width! > 768 ? (
 					<>
 						<Image
 							className="relative bottom-[90px]"
@@ -72,7 +57,7 @@ export default function Home() {
 							alt="Picture of the author"
 						/>
 					</>
-				) : windowSize.innerWidth < 768 && windowSize.innerWidth > 640 ? (
+				) : width! < 768 && width! > 640 ? (
 					<>
 						<Image
 							className="relative bottom-[75px] right-1"
@@ -89,7 +74,7 @@ export default function Home() {
 							alt="Picture of the author"
 						/>
 					</>
-				) : windowSize.innerWidth < 640 && windowSize.innerWidth > 350 ? (
+				) : width! < 640 && width! > 350 ? (
 					<>
 						<Image
 							className="relative bottom-[95px] left-[45px]"
@@ -106,7 +91,7 @@ export default function Home() {
 							alt="Picture of the author"
 						/>
 					</>
-				) : windowSize.innerWidth < 350 ? (
+				) : width! < 350 ? (
 					<>
 						<Image
 							className="relative hidden bottom-[95px] left-[45px]"
