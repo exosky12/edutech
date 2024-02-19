@@ -109,7 +109,22 @@ export default function Home() {
 						/>
 					</>
 				) : (
-					<></>
+					<>
+						<Image
+							className="relative bottom-[140px]"
+							src="/trait1.png"
+							width={380}
+							height={24}
+							alt="Picture of the author"
+						/>
+						<Image
+							className="relative bottom-[45px] left-[160px]"
+							src="/trait2.png"
+							width={360}
+							height={24}
+							alt="Picture of the author"
+						/>
+					</>
 				)}
 			</div>
 			<div
