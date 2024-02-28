@@ -6,7 +6,7 @@ export default function Home() {
 	const { width } = useWindowDimensions();
 
 	return (
-		<div className="w-full h-screen flex flex-col items-center mt-36 sm:mt-52 md:mt-32 z-10">
+		<div className="z-10 mt-36 flex h-screen w-full flex-col items-center sm:mt-52 md:mt-32">
 			<Link
 				target="_blank"
 				href={"https://github.com/exosky12"}
@@ -17,7 +17,7 @@ export default function Home() {
 				</span>
 			</Link>
 			<div>
-				<h1 className="max-w-[320px] sm:max-w-full text-[30px] sm:text-[42px] md:text-[52px] lg:text-[62px] xl:text-[82px] font-bold text-center">
+				<h1 className="text-center font-bold max-w-[320px] text-[30px] sm:text-[42px] sm:max-w-full md:text-[52px] lg:text-[62px] xl:text-[82px]">
 					<span className="text-[#1D4ED8] font-black">Simplifiez</span> votre
 					aprentissage, <br />
 					<span className="text-[#1D4ED8] font-black">dépassez</span> vos
@@ -60,7 +60,7 @@ export default function Home() {
 				) : width! < 768 && width! > 640 ? (
 					<>
 						<Image
-							className="relative bottom-[75px] right-1"
+							className="relative right-1 bottom-[75px]"
 							src="/trait1.png"
 							width={204}
 							height={24}
@@ -139,7 +139,7 @@ export default function Home() {
 					alt="Picture of the author"
 				/>
 				<Link
-					className="font-medium text-[16px] sm:text-[18px] text-black"
+					className="font-medium text-black text-[16px] sm:text-[18px]"
 					href="/apprentissage"
 				>
 					Commencer l&apos;apprentissage
@@ -155,14 +155,14 @@ export default function Home() {
 				/>
 			</div>
 			<Image
-				className="absolute mt-32 md:bottom-0 z-[-1]"
+				className="absolute mt-32 z-[-1] md:bottom-0"
 				src="/blur.png"
 				width={2459}
 				height={915}
 				alt="Picture of the author"
 			/>
-			<div className="mt-[382px] flex flex-row items-center">
-				<div className="w-4/6	">
+			<div className="flex flex-row items-center mt-[382px]">
+				<div className="w-4/6">
 					<Image
 						src="/landingExample2.png"
 						width={700}
@@ -204,9 +204,9 @@ export default function Home() {
 					</div>
 				</ul>
 			</div>
-			<div className="mt-[382px] flex flex-col w-4/6 gap-8 items-center">
+			<div className="flex w-4/6 flex-col items-center gap-8 mt-[382px]">
 				<div>
-					<h2 className="text-[52px] text-center font-bold">
+					<h2 className="text-center font-bold text-[52px]">
 						Ne perdez plus{" "}
 						<span className="text-[#1D4ED8] font-black">une minute</span> dans
 						vos révisions
@@ -219,7 +219,7 @@ export default function Home() {
 						alt="Picture of the author"
 					/>
 				</div>
-				<p className="text-[20px] w-5/6 font-normal text-center">
+				<p className="w-5/6 text-center font-normal text-[20px]">
 					En tant qu’élève je sais ce que c’est de passer des heures et des
 					heures à{" "}
 					<span className="text-[#1D4ED8] font-bold">
@@ -246,9 +246,9 @@ export default function Home() {
 			</div>
 			<div
 				id="apropos"
-				className="mt-[382px] flex flex-row items-center justify-center"
+				className="flex flex-row items-center justify-center mt-[382px]"
 			>
-				<div className="w-2/6 flex flex-col gap-8">
+				<div className="flex w-2/6 flex-col gap-8">
 					<h2 className="font-normal leading-tight text-[48px]">
 						<span className="text-[#1D4ED8] font-bold">Annotez vos cours</span>{" "}
 						avec la même simplicité que sur une feuille
@@ -284,7 +284,7 @@ export default function Home() {
 			</div>
 			<div
 				id="prix"
-				className="mt-[382px] text-center items-center flex flex-col gap-4"
+				className="flex flex-col items-center gap-4 text-center mt-[382px]"
 			>
 				<div>
 					<h2 className="text-[52px]">
@@ -295,7 +295,7 @@ export default function Home() {
 						<span className="text-[#1D4ED8] font-bold">100% gratuit!</span>
 					</h2>
 					<Image
-						className="relative left-[520px] bottom-3"
+						className="relative bottom-3 left-[520px]"
 						src="/trait5.png"
 						width={314}
 						height={24}
@@ -303,7 +303,7 @@ export default function Home() {
 					/>
 					<span className="font-light text-[22px]">(pour le moment)</span>
 				</div>
-				<p className="text-[18px] w-4/6">
+				<p className="w-4/6 text-[18px]">
 					En effet, pour le moment vous pouvez profiter du projet{" "}
 					<span className="text-[#1D4ED8] font-bold">100% gratuitement</span> !{" "}
 					<span className="text-[#1D4ED8] font-bold">Aucun prix</span>,{" "}
@@ -314,15 +314,15 @@ export default function Home() {
 					Dans le futur le projet pourrait s’appuyer sur le principe du Freemium
 				</p>
 			</div>
-			<div className="flex flex-row mt-[222px] items-center align-center justify-center">
-				<div className="items-center w-2/6">
-					<h2 className="text-[52px] font-normal">
+			<div className="flex flex-row items-center justify-center mt-[222px] align-center">
+				<div className="w-2/6 items-center">
+					<h2 className="font-normal text-[52px]">
 						Créateur d’
 						<span className="font-bold">
 							Edu<span className="text-[#1D4ED8]">Tech</span>
 						</span>
 					</h2>
-					<span className="text-[18px] font-light">
+					<span className="font-light text-[18px]">
 						Merienne Jules (Exosky12), apprenti développeur et designer{" "}
 					</span>{" "}
 					<br /> <br />
@@ -361,8 +361,8 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-			<div className="w-10/12 min-h-[377px] banner flex flex-col gap-12 items-center justify-center text-center mt-[282px]">
-				<h2 className="text-[42px] w-2/4 font-normal">
+			<div className="flex w-10/12 flex-col items-center justify-center gap-12 text-center min-h-[377px] banner mt-[282px]">
+				<h2 className="w-2/4 font-normal text-[42px]">
 					Vous voulez{" "}
 					<span className="text-[#1D4ED8] font-bold">simplifier</span> votre
 					apprentissage et{" "}
@@ -381,7 +381,7 @@ export default function Home() {
 						alt="Picture of the author"
 					/>
 					<Link
-						className="font-medium text-[18px] text-black"
+						className="font-medium text-black text-[18px]"
 						href="/apprentissage"
 					>
 						Commencer l&apos;apprentissage

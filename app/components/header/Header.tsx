@@ -11,7 +11,7 @@ export const Header = () => {
 
 	return (
 		<nav className="bg-[#121212] fixed w-full z-20 top-0 start-0">
-			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
 				<Link
 					href="/"
 					className="flex cursor-pointer items-center space-x-3 rtl:space-x-reverse"
@@ -22,7 +22,7 @@ export const Header = () => {
 						height={35}
 						alt="Picture of the author"
 					/>
-					<span className="self-center hidden sm:block cursor-pointer text-[18px] font-bold">
+					<span className="hidden cursor-pointer self-center font-bold text-[18px] sm:block">
 						Edu<span className="text-[#1D4ED8]">Tech</span>
 					</span>
 				</Link>
@@ -34,7 +34,7 @@ export const Header = () => {
 						<SignedOut>
 							<SignInButton mode="modal">
 								<Link
-									className="font-medium borderBtn cursor-pointer flex items-center bg-white rounded-full px-4 py-1 text-[16px] text-black"
+									className="flex cursor-pointer items-center rounded-full bg-white px-4 py-1 font-medium text-black borderBtn text-[16px]"
 									href="/"
 								>
 									Se connecter
@@ -44,14 +44,14 @@ export const Header = () => {
 						<button
 							data-collapse-toggle="navbar-sticky"
 							type="button"
-							className="inline-flex items-center p-2 text-sm text-white md:hidden "
+							className="inline-flex items-center p-2 text-sm text-white md:hidden"
 							aria-controls="navbar-sticky"
 							aria-expanded="false"
 							onClick={() => setIsOpen(!isOpen)}
 						>
 							<span className="sr-only">Open main menu</span>
 							<svg
-								className="w-6 h-6"
+								className="h-6 w-6"
 								aria-hidden="true"
 								fill="currentColor"
 								viewBox="0 0 20 20"
