@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ scrollBehavior: "smooth" }}>
-      <body
+    <html lang="en" style={{ scrollBehavior: "smooth" }} >
+      <body suppressHydrationWarning={true}
         className={cn(
           "antialiased bg-[#121212] min-h-[100vh] text-white",
           satoshi.className

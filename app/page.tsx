@@ -109,7 +109,7 @@ export default function Home() {
               alt="Picture of the author"
             />
           </>
-        ) : (
+        ) : width! > 1280 ? (
           <>
             <Image
               className="relative bottom-[140px]"
@@ -126,6 +126,8 @@ export default function Home() {
               alt="Picture of the author"
             />
           </>
+        ) : (
+          <></>
         )}
       </div>
       <div
@@ -162,16 +164,34 @@ export default function Home() {
         height={915}
         alt="Picture of the author"
       />
-      <div className="flex flex-row items-center mt-[382px]">
-        <div className="w-4/6">
-          <Image
-            src="/landingExample2.png"
-            width={700}
-            height={500}
-            alt="Picture of the author"
-          />
+      <div className="flex flex-col 2md:flex-row items-center justify-center mt-[382px]">
+        <div className="w-5/6 2md:w-5/12 xl:w-4/6">
+          {width! >= 1100 ? (
+            <Image
+              src="/landingExample2.png"
+              width={700}
+              height={500}
+              alt="Picture of the author"
+            />
+          ) : width! >= 900 && width! < 1100 ? (
+            <Image
+              src="/landingExample2.png"
+              width={500}
+              height={400}
+              alt="Picture of the author"
+            />
+          ) : width! < 900 && width! > 200 ? (
+            <Image
+              src="/landingExample2Large.png"
+              width={1200}
+              height={800}
+              alt="Picture of the author"
+            />
+          ) : (
+            <></>
+          )}
         </div>
-        <ul className="flex flex-col gap-[24px]">
+        <ul className="flex w-[450px] mt-12 2md:mt-0 2md:w-[350px] flex-col gap-[24px]">
           <div className="flex items-center gap-2">
             <Image
               src="/plus.png"
